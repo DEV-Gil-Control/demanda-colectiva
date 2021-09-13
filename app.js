@@ -6,6 +6,7 @@ function register(){
     var edad = document.getElementById("edad").value;
     var domicilio = document.getElementById("domicilio").value;
     var colonia = document.getElementById("colonia").value;
+    var codigo = document.getElementById("codigo").value;
     var municipio = document.getElementById("municipio").value;
     var estado = document.getElementById("estado").value;
     var telefono = document.getElementById("telefono").value;
