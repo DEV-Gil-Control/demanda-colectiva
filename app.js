@@ -1,6 +1,16 @@
 function register(){
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
+    var tutor = document.getElementById("tutor").value;
+    var menor = document.getElementById("menor").value;
+    var edad = document.getElementById("edad").value;
+    var domicilio = document.getElementById("domicilio").value;
+    var colonia = document.getElementById("colonia").value;
+    var municipio = document.getElementById("municipio").value;
+    var estado = document.getElementById("estado").value;
+    var telefono = document.getElementById("telefono").value;
+    var celular = document.getElementById("celular").value;
+    var fecha = document.getElementById("fecha").value;
 
     console.log( email , password);
 
