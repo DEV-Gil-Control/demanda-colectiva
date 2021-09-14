@@ -1,5 +1,4 @@
 function register(){
-    var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
     var tutor = document.getElementById("tutor").value;
     var menor = document.getElementById("menor").value;
@@ -13,7 +12,7 @@ function register(){
     var celular = document.getElementById("celular").value;
     var fecha = document.getElementById("fecha").value;
 
-    console.log( email , password);
+    console.log(password);
 
     firebase.auth().createUserWithEmailAndPassword(email, password).then(function(){
       verification()
@@ -27,7 +26,7 @@ function register(){
 }
 
 function login() {
-  var email = document.getElementById("email_login").value;
+  //var email = document.getElementById("email_login").value;
   var password = document.getElementById("password_login").value;
 
   firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
