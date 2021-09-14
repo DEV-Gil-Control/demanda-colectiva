@@ -14,7 +14,7 @@ function register(){
 
     console.log(password);
 
-    firebase.auth().createUserWithEmailAndPassword(email, password).then(function(){
+    firebase.auth().createUserWithEmailAndPassword(password).then(function(){
       verification()
     }).catch(function(error) {
       // Handle Errors here.
@@ -29,7 +29,7 @@ function login() {
   //var email = document.getElementById("email_login").value;
   var password = document.getElementById("password_login").value;
 
-  firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+  firebase.auth().signInWithEmailAndPassword(password).catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
