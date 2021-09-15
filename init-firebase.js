@@ -1,22 +1,20 @@
-// Import the functions you need from the SDKs you need
+<script type="module">
+  // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js";
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
   // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
-    apiKey: "AIzaSyCXhgkjKKZvoc7TD6BX-4zf8xOI0mbPvgw",
-    authDomain: "colectiva-a9328.firebaseapp.com",
-    projectId: "colectiva-a9328",
-    storageBucket: "colectiva-a9328.appspot.com",
-    messagingSenderId: "603650161337",
-    appId: "1:603650161337:web:d635f1db1087bf92b8f968",
-    measurementId: "G-K01MZVNKYC"
+    apiKey: "AIzaSyBFEGUWXOTv5Sgcae53-MUJmqlPce0YZ0M",
+    authDomain: "amparo-671eb.firebaseapp.com",
+    projectId: "amparo-671eb",
+    storageBucket: "amparo-671eb.appspot.com",
+    messagingSenderId: "680179086675",
+    appId: "1:680179086675:web:683ba04a352afcd03d1da6"
   };
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
+</script>
 
