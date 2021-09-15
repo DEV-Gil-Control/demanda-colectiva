@@ -1,20 +1,10 @@
 function register(){
+    var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
-    var tutor = document.getElementById("tutor").value;
-    var menor = document.getElementById("menor").value;
-    var edad = document.getElementById("edad").value;
-    var domicilio = document.getElementById("domicilio").value;
-    var colonia = document.getElementById("colonia").value;
-    var codigo = document.getElementById("codigo").value;
-    var municipio = document.getElementById("municipio").value;
-    var estado = document.getElementById("estado").value;
-    var telefono = document.getElementById("telefono").value;
-    var celular = document.getElementById("celular").value;
-    var fecha = document.getElementById("fecha").value;
 
-    console.log(password);
+    console.log( email , password);
 
-    firebase.auth().createUserWithEmailAndPassword(password).then(function(){
+    firebase.auth().createUserWithEmailAndPassword(email, password).then(function(){
       verification()
     }).catch(function(error) {
       // Handle Errors here.
@@ -26,10 +16,10 @@ function register(){
 }
 
 function login() {
-  //var email = document.getElementById("email_login").value;
+  var email = document.getElementById("email_login").value;
   var password = document.getElementById("password_login").value;
 
-  firebase.auth().signInWithEmailAndPassword(password).catch(function(error) {
+  firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
